@@ -5,6 +5,8 @@
 }
 html {
   font-size: 16px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -13,9 +15,7 @@ body {
   color: #777;
   padding: 0 0.5rem;
   margin-top: -.4rem;}
-main {
-  scroll-behavior: smooth;
-}
+
 /* @keyframes create animation functions */
 
 /* (X,Y vertex at 0, 0) *******************************************/
