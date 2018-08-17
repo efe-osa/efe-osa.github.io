@@ -100,7 +100,7 @@ transform: translate(0);
   margin-top: 3.75rem;
 }
 .mb-md{
-  margin-bottom: 3.75rem;
+  margin-bottom: 3.25rem;
 }
 .mb-lg{
   margin-bottom: 5rem;
@@ -133,6 +133,20 @@ transform: translate(0);
  transform: translate(-50%, -50%);
  text-align: center;
  margin-top: 2rem;
+}
+/* .portfolio-card */
+.portfolio-card {
+  background-color: rgba(213, 213, 213, 0.898);
+  border-radius: 5px;
+  box-shadow: 0 20px 64px rgba(68, 16, 128, 0.35);
+  margin: 1rem 0;
+  opacity: 0.9;
+  transition: all .4s ease-in;
+  overflow: hidden;
+}
+.portfolio-card:hover {
+  transform: translateY(-.5rem);
+  box-shadow: 0 10px 32px rgba(68, 16, 128, 0.5);
 }
 /* typography */
 .heading-primary {
@@ -238,7 +252,7 @@ transform: translate(0);
 }
 .project__img {
  width: 100%;
- height: 21.5rem;
+ height: 20.5rem;
   backface-visibility: hidden;
   transition: all .5s;
 }
@@ -258,20 +272,6 @@ transform: translate(0);
 }
 .project:hover .project__img {
   filter: blur(.5px) brightness(90%);
-}
-/* .portfolio-card */
-.portfolio-card {
-  background-color: rgba(213, 213, 213, 0.898);
-  border-radius: 5px;
-  box-shadow: 0 20px 64px rgba(68, 16, 128, 0.35);
-  margin: 1rem 0;
-  opacity: 0.9;
-  transition: all .4s ease-in;
-  overflow: hidden;
-}
-.portfolio-card:hover {
-  transform: translateY(-.5rem);
-  box-shadow: 0 10px 32px rgba(68, 16, 128, 0.5);
 }
 .section-aboutme__skills{
   color: #fff;
