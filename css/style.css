@@ -67,7 +67,6 @@ transform: translate(0);
   }
   100% {
     opacity: 0;
-    /* transform: translateX(-10rem)  */
   }
 }
 
@@ -127,19 +126,20 @@ transform: translate(0);
   position: relative;
 }
 .text-box {
- position: absolute;
- top: 40%;
- left:50%; 
- transform: translate(-50%, -50%);
- text-align: center;
- margin-top: 2rem;
-}
+  position: absolute;
+  top: 40%;
+  left:50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 2rem;
+ }
+
 /* .portfolio-card */
 .portfolio-card {
   background-color: rgba(213, 213, 213, 0.898);
   border-radius: 5px;
-  box-shadow: 0 20px 64px rgba(68, 16, 128, 0.35);
-  margin: 1rem 0;
+  box-shadow: 0 30px 64px rgba(68, 16, 128, 0.35);
+  margin: .7rem 0;
   opacity: 0.9;
   transition: all .4s ease-in;
   overflow: hidden;
@@ -152,7 +152,7 @@ transform: translate(0);
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   backface-visibility: hidden;
 }
 .heading-primary-main{
@@ -243,7 +243,6 @@ transform: translate(0);
 .section-aboutme__portfolio {
   margin-top: 2rem;
   text-align: center;
-  perspective: 100rem;
   position: relative;
 }
 .project {
@@ -266,6 +265,9 @@ transform: translate(0);
   transition: all .5s;
   backface-visibility: hidden;
 }
+.project__name {
+  text-align:center;
+}
 .project:hover .project__link {
   opacity: 1;
   transform: translate(-50%, -50%);
@@ -276,7 +278,6 @@ transform: translate(0);
 .section-aboutme__skills{
   color: #fff;
   margin-top: 12.5rem;
-  padding: 0 2.5rem 2.5rem 2.5rem;
   background-size: 100% 100%;
   background-image: linear-gradient(to bottom,
    rgb(255, 255, 255),
@@ -305,7 +306,6 @@ i:hover {
   text-align: center;
   padding: 2.5rem;
   font-size: 1.25rem;
-  height: 80vh;
 }
 
 .section-aboutme__text {
