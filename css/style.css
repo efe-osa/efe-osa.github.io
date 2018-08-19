@@ -1,30 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 16px;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  padding: 0 0.5rem;
-  margin-top: -.4rem;}
-
-/* @keyframes create animation functions */
-
-/* (X,Y vertex at 0, 0) *******************************************/
-/*                                                             /  */
-/*                                       (X,Y vertex at 100, 100 )*/
-/*                                                                */
-/*                                                                */
-/******************************************************************/
-
 @keyframes moveInUp {
   0% {
 opacity: 0;
@@ -61,15 +34,26 @@ opacity: 1;
 transform: translate(0);
   }
 }
-@keyframes moveOutLeft {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 62.5% of the browser html size [75% = 12px] */
+  font-size: 75%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 0 0.5rem;
+  margin-top: -.4rem;
+}
 /* LAYOUT- grid */
 .row {
   max-width: 100rem;
@@ -82,8 +66,8 @@ transform: translate(0);
     clear: both; }
   .row [class^="col-"] {
     float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 6rem; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -135,11 +119,11 @@ transform: translate(0);
  }
 
 /* .portfolio-card */
-.portfolio-card {
+.portfolio-card, .portfolio-card-2 {
   background-color: rgba(213, 213, 213, 0.898);
   border-radius: 5px;
   box-shadow: 0 30px 64px rgba(68, 16, 128, 0.35);
-  margin: .7rem 0;
+  margin: .7rem auto;
   opacity: 0.9;
   transition: all .4s ease-in;
   overflow: hidden;
@@ -166,7 +150,8 @@ transform: translate(0);
 .heading-primary-sub{
   display: block;
   margin-top: 1rem;
-  font-size: 1.5rem;
+  padding: .75rem;
+  font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: 1.1rem;
   animation-name: moveInBottom;
@@ -290,14 +275,14 @@ div i {
   padding: .75rem;
   border-radius: 50%;
   outline-offset: .5rem;
+  margin: .5rem;
 }
 i {
   font-size: 3rem;  
   transition: all .2s ease; 
-  color: rgb(64, 209, 190);
-  margin: 0 .5rem;
+  color: rgb(66, 209, 190);
 }
-i:hover {
+i:hover, i img:hover {
   transform: scale(1.125) rotateZ(10deg);
   outline: .125rem solid #fff;
  
@@ -324,13 +309,74 @@ i:hover {
 }
 .section-aboutme__image {
   border-radius: 50%;
+  max-width: 17.2rem;
+  max-height: 21.9rem;
 }
-footer {
+.footer {
   background-color:
-  rgba(15, 77, 183, 0.125);
+  rgba(15, 77, 183, 0.213);
   margin-top: 0.5rem;
   padding: 2rem;
 }
-footer a {
+.footer .footer__link:not(:last-child){
+  margin-right: .75rem;
+}
+.footer__link {
   text-decoration: none;
+}
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop */
+
+/*75em = 1200px [land < 1200]*/
+@media  only screen and (max-width: 75em) { 
+  html{font-size: 62.5%};
+}
+/*56.25em = 900px [port < 900]*/
+@media  only screen and (max-width: 56.25em) { 
+  html{font-size: 50%};
+}
+@media  only screen and (max-width: 37.5em) { 
+  .row .col-1-of-3, .row .col-2-of-3, .row .col-1-of-2 {
+    width: 100%;
+    text-align: center;
+  }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .heading-primary-main {
+    font-size: 3.125rem;
+    font-weight: 700;
+  }
+  .heading-primary-sub {
+    font-size: 1.3rem;
+  }
+  .heading-secondary {
+    font-size: 2.75em;
+    letter-spacing: .75rem;
+  }
+  .heading-tertiary {
+    font-size: 2.25rem;
+  }
+  .heading-tertiary-sub {
+    font-size: 1.25rem;
+  }
+  .portfolio-card-2 {
+    max-width: 50%;
+  }
+  .footer {
+    text-align: center;
+  }
+  .section-pd {
+    padding: 1.45rem;
+  }
+}
+
+@media  only screen and (min-width: 112.5em) { /*112.5em = 1800px*/
+  html{font-size: 75%};
 }
