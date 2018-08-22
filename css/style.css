@@ -104,7 +104,7 @@ body {
   background-image: linear-gradient(
     to bottom,
      rgba(15, 77, 183, 0.3),
-     rgba(39, 179, 161, 0.025)), url('../img/programmer.jpg');
+     rgba(39, 179, 161, 0.025)), url('http://res.cloudinary.com/osawaru/image/upload/v1534479795/programmer.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -267,7 +267,7 @@ body {
   background-image: linear-gradient(to bottom,
    rgb(255, 255, 255),
    rgba(159, 194, 255, 0.5),
-    rgba(15, 77, 183, 0.025)), url("../img/workspace.jpg");
+    rgba(15, 77, 183, 0.025)), url("http://res.cloudinary.com/osawaru/image/upload/v1534479794/workspace.jpg");
  }
  /* icon style  */
 div i {
@@ -282,7 +282,7 @@ i {
   transition: all .2s ease; 
   color: rgb(66, 209, 190);
 }
-i:hover, i img:hover {
+i:hover {
   transform: scale(1.125) rotateZ(10deg);
   outline: .125rem solid #fff;
  
@@ -314,7 +314,7 @@ i:hover, i img:hover {
 }
 .footer {
   background-color:
-  rgba(15, 77, 183, 0.213);
+  rgba(59, 127, 245, 0.2);
   margin-top: 0.5rem;
   padding: 2rem;
 }
