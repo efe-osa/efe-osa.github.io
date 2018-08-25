@@ -125,7 +125,7 @@ body {
 .portfolio-card, .portfolio-card-2 {
   background-color: rgba(213, 213, 213, 0.898);
   border-radius: 5px;
-  box-shadow: 0 30px 64px rgba(68, 16, 128, 0.35);
+  box-shadow: 0 30px 64px rgba(68, 16, 128, 0.25);
   margin: .7rem auto;
   opacity: 0.9;
   transition: all .4s ease-in;
@@ -373,7 +373,7 @@ i:hover {
     font-size: 2.25rem;
   }
   .heading-tertiary-sub {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .portfolio-card-2 {
     max-width: 50%;
