@@ -343,11 +343,11 @@ i:hover {
 
 /*75em = 1200px [land < 1200]*/
 @media  only screen and (max-width: 75em) { 
-  html{font-size: 62.5%};
+  html{font-size: 75%%};
 }
 /*56.25em = 900px [port < 900]*/
 @media  only screen and (max-width: 56.25em) { 
-  html{font-size: 50%};
+  html{font-size: 62.5%};
 }
 @media  only screen and (max-width: 37.5em) { 
   .row .col-1-of-3, .row .col-2-of-3, .row .col-1-of-2 {
@@ -387,5 +387,5 @@ i:hover {
 }
 
 @media  only screen and (min-width: 112.5em) { /*112.5em = 1800px*/
-  html{font-size: 75%};
+  html{font-size: 87.5%};
 }
