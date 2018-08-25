@@ -167,7 +167,9 @@ body {
   text-align: center;
   letter-spacing: 1rem;
   color: #777;
-  border-bottom: 1.25px solid rgb(66, 209, 190);
+  padding-left:1rem;
+  padding-right: 1rem;
+  border-bottom: 2px solid rgb(66, 209, 190);
 }
 .heading-tertiary {
   font-size: 1.7rem;
