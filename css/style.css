@@ -103,7 +103,7 @@ body {
 
 /* layout */
 .header {
-  height: 90vh;
+  height: 95vh;
   background-image: linear-gradient(
     to bottom,
      rgba(15, 77, 183, 0.3),
