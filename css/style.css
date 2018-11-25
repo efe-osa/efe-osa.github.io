@@ -103,7 +103,7 @@ body {
 
 /* layout */
 .header {
-  height: 99vh;
+  height: 95vh;
   background-image: linear-gradient(
     to bottom,
      rgba(15, 77, 183, 0.3),
@@ -125,7 +125,7 @@ body {
 .portfolio-card, .portfolio-card-2 {
   background-color: rgba(213, 213, 213, 0.898);
   border-radius: 5px;
-  box-shadow: 0 30px 64px rgba(68, 16, 128, 0.35);
+  box-shadow: 0 30px 64px rgba(68, 16, 128, 0.25);
   margin: .7rem auto;
   opacity: 0.9;
   transition: all .4s ease-in;
@@ -167,6 +167,9 @@ body {
   text-align: center;
   letter-spacing: 1rem;
   color: #777;
+  padding-left:1rem;
+  padding-right: 1rem;
+  border-bottom: 2px solid rgb(66, 209, 190);
 }
 .heading-tertiary {
   font-size: 1.7rem;
@@ -343,11 +346,11 @@ i:hover {
 
 /*75em = 1200px [land < 1200]*/
 @media  only screen and (max-width: 75em) { 
-  html{font-size: 62.5%};
+  html{font-size: 75%%};
 }
 /*56.25em = 900px [port < 900]*/
 @media  only screen and (max-width: 56.25em) { 
-  html{font-size: 50%};
+  html{font-size: 62.5%};
 }
 @media  only screen and (max-width: 37.5em) { 
   .row .col-1-of-3, .row .col-2-of-3, .row .col-1-of-2 {
@@ -373,7 +376,7 @@ i:hover {
     font-size: 2.25rem;
   }
   .heading-tertiary-sub {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .portfolio-card-2 {
     max-width: 50%;
@@ -387,5 +390,5 @@ i:hover {
 }
 
 @media  only screen and (min-width: 112.5em) { /*112.5em = 1800px*/
-  html{font-size: 75%};
+  html{font-size: 87.5%};
 }
