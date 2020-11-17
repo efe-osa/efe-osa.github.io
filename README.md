@@ -1,6 +1,6 @@
 # jessye95.github.io
 Portfolio page
-- (https://efeosa.github.io)
+- (https://efe-osa.github.io)
 
 ## Technologies
 HTML, CSS
